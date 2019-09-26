@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <meta name="robots" content="noindex">
+    <title>Helsingborg Digital Service Center</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3MTjVjz_KKz4yIe4VJlMCKH3ZXsmhMUo"></script> <!-- TODO: fix API key being hard-coded -->
+  </head>
+  <body>
+    <div id="root"><div style="display:none">{{SSR}}</div></div>
+    <script type="text/javascript">
+      (function(server,psID){
+      var s=document.createElement('script');
+      s.type='text/javascript';
+      s.src=server+'/'+psID+'/ps.js';
+      s.setAttribute('async','');
+      document.getElementsByTagName('head')[0].appendChild(s);
+      }('https://account.psplugin.com','331F5271-4B0B-4625-BF08-4157F101DBFF'));
+    </script>
+  </body>
+</html>

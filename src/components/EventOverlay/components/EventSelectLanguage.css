@@ -1,0 +1,193 @@
+.EventSelectLanguage {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 455px;
+  padding: 1rem 1rem 2rem;
+  background: #cb0050;
+  color: #fff;
+  border-radius: 4px;
+  z-index: 4;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+.EventSelectLanguage__title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-left: 0.5rem;
+}
+
+.EventSelectLanguage__language {
+  width: 125px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem;
+  font: inherit;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.078);
+  color: #fff;
+  border-radius: 3px;
+}
+
+.EventSelectLanguage__language--active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.EventSelectLanguage__flag {
+  display: block;
+  width: 43px;
+  border-radius: 4px;
+  background-size: cover;
+  margin-right: 0.5em;
+}
+
+.EventSelectLanguage-Backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.EventDropUp h3{
+  margin:0;
+  font-weight:500;
+  font-size:1.5em;
+  margin-top:2em;
+  display: inline-block;
+}
+
+.EventDropUp {
+	position: absolute;
+	left: 0;
+	bottom: 120px;
+	height: 365px;
+	width: 340px;
+	perspective: 500px;
+  z-index: 8;
+  visibility: hidden;
+}
+
+.EventDropUp ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 -15px 10px 0 #fff;
+  z-index: 9;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 770px) {
+	.EventDropUp {
+		left: 0.6rem;
+	}
+}
+
+.EventDropUp__box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 16px 80px rgba(0, 0, 0, 0.5);
+	transform: rotateX(10deg);
+	opacity: 0;
+	visibility: hidden;
+	transform-origin: right bottom;
+  transition: all 225ms ease-out;
+}
+
+.EventDropUp__box:hover {
+  transition: all 300ms 225ms ease-out;
+}
+
+.EventDropUp__box.is-active {
+	opacity: 1;
+	visibility: visible;
+  transform: rotateX(0deg);
+}
+
+.EventDropUp__box ul {
+	height: calc(100% - 27px);
+	padding: 0;
+	overflow-y: scroll;
+}
+
+.EventLang--select {
+	display: block;
+	position: relative;
+	padding: 0.6em 0;
+	margin: 0 0.8em;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	opacity: 0;
+	cursor: pointer;
+  transform: translateY(10px);
+  will-change: transform, opacity;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.EventLang--select.checkMark {
+	content: '';
+	background-image: url(../../../media/check.svg);
+	background-repeat: no-repeat;
+	background-position: 94% center;
+	transform: translateX(6px);
+	opacity: 0;
+}
+
+.EventLang--select.spinner {
+	background-image: url(../../../media/loading.svg);
+	background-repeat: no-repeat;
+	background-position: 94% center;
+	transform: translateX(6px);
+	opacity: 0.6;
+}
+
+.EventLang--select h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-left: 0.35rem;
+  transform: translateY(-9px);
+}
+
+.EventLang--select.is-active {
+  background-color: #f7f7f7;
+}
+
+@media only screen and (min-width: 770px) {
+	.EventLang--select {
+		padding: 0.6em 1em;
+	}
+	.EventLang--select.is-active.checkMark {
+		opacity: 1;
+		transform: translateX(0px);
+  }
+	.EventLang--select.is-active.spinner {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.EventLang--select__box {
+  display: inline-block;
+	align-items: center;
+}

@@ -1,0 +1,89 @@
+.SideNavigation {
+  position: fixed;
+  display: inline-block;
+  top: 20vh;
+  left: 0.85rem;
+  padding: 0;
+  margin: 0;
+  z-index: 9;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.SideNavigationLink {
+  position: relative;
+  font-size: 0.9375rem;
+  background: #fff;
+  color: #c70d53;
+  padding: 0.75rem 2rem;
+  padding-left: 3.5rem;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.SideNavigationLink:first-child {
+  padding-top: 1rem;
+}
+
+.SideNavigationLink:last-child {
+  padding-bottom: 1rem;
+}
+
+.SideNavigationLink--selected {
+  color: #fff;
+}
+
+.SideNavigationLink--has-children {
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.SideNavigationLink--has-children ul li.SideNavigationLink {
+  padding-right: 2rem;
+  padding-left: 2.6rem;
+  margin-left: -1.9rem;
+}
+
+.SideNavigationLink--has-children ul li.SideNavigationLink .SideNavigationLink__icon {
+  left: 0.36rem;
+}
+
+.SideNavigationLink__icon {
+  display: block;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.9rem;
+  width: 1.625rem;
+}
+
+.SideNavigationLink:first-child .SideNavigationLink__icon {
+  top: 0.7rem;
+}
+
+.SideNavigationLink__icon svg {
+  display: inline-block;
+  max-width: 1.8rem;
+  max-height: 1.8rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+}
+
+.SideNavigationLink__icon svg.customIcon {
+  max-width: 1.2rem;
+  max-height: 1.2rem;
+}
+.SideNavigation ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-top: 0.75rem;
+}
+
+@media screen and (orientation: portrait) {
+  .SideNavigation {
+    top: auto;
+    bottom: 40vh;
+  }
+}

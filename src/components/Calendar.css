@@ -1,0 +1,184 @@
+.Calendar {
+  min-height: 404px;
+}
+
+ .Calendar .CalendarHeader {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 17px;
+ }
+
+.Calendar .DayPicker.DayPicker--horizontal {
+  margin: 0 auto;
+  box-shadow: none;
+  height: 318px;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .DayPickerNavigation__prev,
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .DayPickerNavigation__next {
+  color: rgb(203,0,80);
+  font-weight: bold;
+  background-color: transparent;
+  top: 24px;
+  border: none;
+  font-size: 15px;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody {
+  border-top: 13px solid white;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal .CalendarMonth__caption.js-CalendarMonth__caption {
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal .CalendarMonth__caption.js-CalendarMonth__caption::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 94%;
+  height: 2.25rem;
+  top: 15px;
+  left: 3%;
+  border-bottom: solid 1px #E3E3E3;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li small {
+  position: relative;
+  color: transparent;
+}
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li small:after {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #535353;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:first-child small::after {
+  content: 'M';
+}
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(2) small::after {
+  content: 'T';
+}
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(3) small::after {
+  content: 'W';
+}
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(4) small::after {
+  content: 'T';
+}
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(5) small::after {
+  content: 'F';
+}
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(6) small::after {
+  content: 'S';
+}
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(7) small::after {
+  content: 'S';
+}
+
+.Calendar--lang-en .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:first-child small::after {
+  content: 'S';
+}
+.Calendar--lang-en .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(2) small::after {
+  content: 'M';
+}
+.Calendar--lang-en .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(3) small::after {
+  content: 'T';
+}
+.Calendar--lang-en .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(4) small::after {
+  content: 'W';
+}
+.Calendar--lang-en .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(5) small::after {
+  content: 'T';
+}
+.Calendar--lang-en .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(6) small::after {
+  content: 'F';
+}
+.Calendar--lang-en .DayPicker.DayPicker--horizontal .DayPicker__week-headers .DayPicker__week-header ul li:nth-child(7) small::after {
+  content: 'S';
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay {
+  border: none;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay button {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  color: black;
+  border: solid 1px #E3E3E3;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay.CalendarDay--selected-start {
+  background-color: transparent;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay.CalendarDay--selected-start button {
+  background-color: rgb(203,0,80);
+  border: solid 1px rgb(203,0,80);
+  color: white;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay--selected-span,
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay.CalendarDay--selected-end,
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay.CalendarDay--last-in-range {
+  background-color: transparent;
+}
+
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay--selected-span button,
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay.CalendarDay--selected-end button,
+.Calendar .DayPicker.DayPicker--horizontal .DayPicker__focus-region .transition-container.transition-container--horizontal table tbody .CalendarDay.CalendarDay--last-in-range button {
+  border: solid 2px  rgb(203,0,80);
+}
+
+.Calendar .CalendarDay--blocked-calendar {
+  background: #fff;
+}
+
+.Calendar .CalendarDay--blocked-calendar .CalendarDay__button {
+  color: #bababa !important;
+}
+
+.Calendar .CalendarDay--hovered:not(.CalendarDay--blocked-calendar),
+.Calendar .CalendarDay--hovered-span:not(.CalendarDay--blocked-calendar) {
+  background: rgb(203,0,80) !important;
+}
+
+.Calendar .CalendarDay--after-hovered-start {
+  background: #fff !important;
+}
+
+.Calendar .DayPicker .DayPickerKeyboardShortcuts__show {
+  display: none;
+}
+
+.Calendar-button-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 1.5rem;
+  margin: 20px auto 1rem;
+  justify-content: space-around;
+}
+
+.Calendar-button-wrapper button.CalendarButton {
+  flex-grow: 1;
+  padding: 10px 7px;
+  margin: auto;
+  border: none;
+  color: #fff;
+  background-color: rgb(203,0,80);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+button.CalendarButton:not(:last-of-type) {
+  margin-right: 8px;
+}

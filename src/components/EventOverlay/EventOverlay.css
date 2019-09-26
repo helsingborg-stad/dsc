@@ -1,0 +1,238 @@
+
+.EventOverlay-wrapper {
+  position: fixed;
+  display: flex;
+  bottom: 3.6875rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.EventOverlay {
+  position: relative;
+  width: calc(100vw - 325px - 24vw);
+  max-width: 700px;
+  max-height: calc( 100vh - 7.5rem - 1.25rem);
+  background: #fff;
+  border-radius: 3px;
+  padding: 2rem;
+}
+.EventOverlay-imgWrapper {
+  width: calc(100% + 4rem);
+  height: 19.2rem;
+  overflow: hidden;
+  position: relative;
+  margin-top: -2rem;
+  margin-left: -2rem;
+    border-radius: 3px 3px 0 0;
+}
+.EventOverlay-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.EventOverlay-heading {
+  font-size: 1.875rem;
+  margin: 1rem 0 0;
+}
+
+.EventOverlay-content-scrollWrapper {
+  position: relative;
+  display: block;
+  margin: 0 1rem 0 0;
+}
+
+.EventOverlay-spinner {
+  width: 100px;
+  height: 50px;
+  position: inherit;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2rem;
+}
+
+.EventOverlay-spinner ~ .EventOverlay-content {
+  opacity: 0.6;
+}
+
+.EventOverlay-content {
+  font-size: 0.9375rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #535353;
+}
+
+.EventOverlay-content > p:empty {
+  margin-bottom: 5.4rem;
+}
+
+.EventOverlay-content > p:first-of-type {
+  margin-top: 0;
+}
+
+.EventOverlay-button {
+  display: block;
+  text-align: center;
+  border: 0;
+  background: #c70d53;
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.8rem 1.25rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.EventOverlay-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.EventOverlay-videoButton {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #d50246;
+  padding: 0.3rem 0.8rem 0.4rem 2.5rem;
+  border: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  background: transparent url('../../media/film.svg') no-repeat;
+  background-size: 24px;
+  background-position: 11px 5px;
+  cursor: pointer;
+}
+
+.EventOverlay-metaBox {
+  font-size: 0.8125rem;
+  padding: 0.75rem 0 0.25rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.EventOverlay-metaBox h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.EventOverlay-metaBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.EventOverlay-metaBox li {
+  padding: 0.25rem 0;
+}
+
+.EventOverlay-metaBox a {
+  font-weight: 500;
+}
+
+.EventOverlay-closeButton-wrapper {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.EventOverlay-closeButton {
+  border: 0;
+  background: #fff;
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0.25rem;
+  line-height: 1.45rem;
+  cursor: pointer;
+}
+
+.EventOverlay-closeButton > img {
+  width: 12px;
+  height: 12px;
+}
+
+.EventOverlay-dateGraphic {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.625rem;
+  padding: 0.3rem;
+  margin-top: 0.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c70d53;
+  border: 1px solid rgba(199, 13, 83, 0.33); /* #c70d53 @ 33% opacity */
+  border-radius: 50%;
+  line-height: 0.625rem;
+  font-weight: bold;
+}
+
+.EventOverlay-dateGraphic__month {
+  font-size: 0.375rem;
+  font-weight: 500;
+}
+
+.EventOverlay-date {
+  display: inline-block;
+  line-height: 2rem;
+  transform: translateY(-3px);
+  padding-left: 0.33rem;
+}
+
+.EventOverlay-dateSeparator {
+  display: inline-block;
+  line-height: 2rem;
+  transform: translateY(-3px);
+  padding: 0 0.5rem;
+}
+
+.EventOverlay-dateSeparator--narrow {
+  padding: 0 0 0 0.25rem;
+}
+
+.EventOverlay-videoWrapper {
+  position: fixed;
+  width: 100%;
+  top: calc(50% - 300px);
+  left: calc(50% - 320px);
+  max-width: 640px;
+}
+
+.EventOverlay-ratingHeading {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.EventOverlay-ratingWrapper {
+  padding-right: 1rem;
+  height: 100%;
+  margin-bottom: -2rem;
+}
+
+.EventOverlay-ratingName {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+.EventOverlay-reviewStar {
+  max-width: 0.75rem;
+  max-height: 0.75rem;
+  margin-right: 0.1rem;
+}
+
+.EventOverlay-ratingText {
+  font-size: 0.75rem;
+}
+
+@media screen and (orientation: portrait) {
+  .EventOverlay-wrapper {
+    bottom: 11rem;
+  }
+  .EventOverlay {
+    width: 700px;
+    max-height: calc( 100vh - 7.5rem - 1.25rem - 10rem );
+  }
+}

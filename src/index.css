@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: #232323;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: #d50246;
+  text-decoration: none;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}

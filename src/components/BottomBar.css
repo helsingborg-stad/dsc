@@ -1,0 +1,38 @@
+.BottomBar {
+    position: absolute;
+    left: 0.85rem;
+    bottom: 0;
+    width: calc(100% - 0.85rem);
+    height: 3.75rem;
+    text-align: center;
+    background: rgba(3, 3, 3, 0.75);
+    padding-left: calc(5%);
+    padding-right: calc(5% + 0.85rem);
+}
+
+button.BottomBarLink {
+    position: relative;
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 5px 2em 0;
+    margin-right: 1.5em;
+    line-height: 55px;
+    background: none;
+    color: #c5c5c5;
+    border: 0;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.BottomBarLink:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (orientation: portrait) {
+    .BottomBar {
+        height: 7.5rem;
+        padding-right: calc(5% + 0.85rem + 80px);
+        padding-left: calc(5% + 0.85rem + 80px);
+    }
+}

@@ -1,0 +1,112 @@
+.GoogleMapsModal {
+  position: relative;
+  display: inline-block;
+  width: 260px;
+  background: #fff;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  padding: 1.5rem 1.5rem 4rem;
+}
+
+.GoogleMapsModal {
+  transform: scale(0.7) transLateX(-176px) translateY(10px);
+  transform-origin: 50% 0;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  visibility: hidden;
+}
+
+.GoogleMapsModal--visible {
+  transform: scale(1) transLateX(-123px) translateY(35px);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.GoogleMapsModal-triangle {
+   width: 40px;
+   height: 40px;
+   position: absolute;
+   top: -40px;
+   left: 117px;
+   overflow: hidden;
+   box-shadow: 0 9px 10px -17px rgba(0,0,0,0.5);
+   pointer-events: none;
+}
+.GoogleMapsModal-triangle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  top: 30px;
+  left: 4px;
+  box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
+}
+
+.GoogleMapsModal-img {
+  margin: -1.25rem 0 0 calc(-1.5rem + 5px);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 250px;
+}
+
+.GoogleMapsModal-heading {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.GoogleMapsModal-preamble,
+.GoogleMapsModal-moreInfo {
+  font-size: 14px;
+  line-height: 18px;
+  color: #535353;
+}
+
+.GoogleMapsModal-buttonWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.GoogleMapsModal-button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #ea004b;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.GoogleMapsModal-button--emphasized {
+  background: #ea004b;
+  color: #fff;
+  border-color: #ea004b;
+}
+
+.GoogleMapsModal-button--alignRight {
+  margin-left: 1rem;
+}
+
+.GoogleMapsModal-closeButton {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: 0;
+  background: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.GoogleMapsModal-closeButton img {
+  width: 10px;
+  margin-top: 4px;
+}

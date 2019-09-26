@@ -1,0 +1,37 @@
+.AsideMenu {
+  background: #fff;
+  height: calc(77vh - 4.6875rem);
+  position: absolute;
+  top: 4.6875rem;
+  right: 0;
+  width: 325px;
+  border-left: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.AsideMenu--fullHeight {
+  height: calc(100vh - 7.9875rem);
+  border-bottom: 0;
+}
+
+@media screen and (orientation: portrait) {
+  .AsideMenu:not(.AsideMenu--fullHeight) {
+    height: calc(86vh - 4.6875rem - 3.25rem);
+  }
+
+  .AsideMenu--fullHeight {
+    height: calc(100vh - 7.9875rem - 3.25rem);
+  }
+
+  .AsideMenu {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .AsideMenu-EventPage {
+    flex-direction: column;
+    padding-top: 51.4rem;
+  }
+}
